@@ -164,7 +164,7 @@ def multimap(pairs) -> dict:
 
 # Create your own map and define the nodes
 
-nearby_locations = Map(
+saveetha_nearby_locations = Map(
     {('Bagalur','Jogikalasanapalli'):1.6,
      ('Jogikalasanapalli','Lingapuram'):1.5,
      ('Lingapuram','Moorthyganadinna'):1.5,
