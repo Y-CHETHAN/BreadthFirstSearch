@@ -22,8 +22,6 @@ Implement the search algorithm by passing any two nodes/places to find a possibl
 ### STEP 5: 
 Display the route sequence. 
 
-<br><br><br>
-
 ## ROUTE MAP:
 
 ![ alt text for screen readers](./images/map.jpg "Map around my house")
