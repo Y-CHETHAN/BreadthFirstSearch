@@ -1,12 +1,12 @@
 # Breadth First Search
-## AIM
+## AIM:
 
 To develop an algorithm to find the route from the source to the destination point using breadth-first search.
 
-## THEORY
+## THEORY:
 To implement Breadth-First_Search ( BFS ) algorithm to find the route between an initial state to a final state.<br>Something like google maps. We create a dictionary to act as the dataset for the search alogrithm, containing all the distances between all the nodes ( Places ).
 
-## DESIGN STEPS
+## DESIGN STEPS:
 
 ### STEP 1:
 Identify a location in the google map: Gudichettulu
@@ -22,12 +22,12 @@ Implement the search algorithm by passing any two nodes/places to find a possibl
 ### STEP 5: 
 Display the route sequence. 
 
-## ROUTE MAP
+## ROUTE MAP:
 
 ![ alt text for screen readers](./images/map.jpg "Map around my house")
 
-## PROGRAM
-```python
+## PROGRAM:
+```
 %matplotlib inline
 import matplotlib.pyplot as plt
 import random
@@ -58,7 +58,7 @@ class Problem(object):
         return '{0}({1}, {2})'.format(
             type(self).__name__, self.initial, self.goal)
 ```
-```python
+```
 class Node:
     "A Node in a search tree."
     def __init__(self, state, parent=None, action=None, path_cost=0):
@@ -88,7 +88,6 @@ def path_actions(node):
     if node.parent is None:
         return []  
     return path_actions(node.parent) + [node.action]
-
 
 def path_states(node):
     "The sequence of states to get to this node."
